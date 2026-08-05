@@ -1,5 +1,7 @@
 # DevOps Intern Final Assessment
 
+![GitHub Actions](https://github.com/ThanushaBai/devops-intern-final/actions/workflows/ci.yml/badge.svg)
+
 **Name:** Thanusha Bai V  
 **Date:** August 2026
 
