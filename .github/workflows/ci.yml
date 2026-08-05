@@ -1,4 +1,4 @@
-name: python CI
+name: Python CI
 
 on:
   push:
@@ -7,16 +7,16 @@ on:
 
 jobs:
   run-hello:
-    runs on: ubuntu-latest
+    runs-on: ubuntu-latest
 
     steps:
-      -name: Checkout Repository
-      uses: actions/checkout@v4 
-     
-      -name: set up python
-      uses: actions/setup-python@5
-      with:
-        python-version: "3.12"
-  
-      -name: Run hello.py
-      run: python hello.py
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run hello.py
+        run: python hello.py
