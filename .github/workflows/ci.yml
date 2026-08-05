@@ -1,0 +1,22 @@
+name: python CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  run-hello:
+    runs on: ubuntu-latest
+
+    steps:
+      -name: Checkout Repository
+      uses: actions/checkout@v4 
+     
+      -name: set up python
+      uses: actions/setup-python@5
+      with:
+        python-version: "3.12"
+  
+      -name: Run hello.py
+      run: python hello.py
